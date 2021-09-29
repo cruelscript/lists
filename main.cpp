@@ -1,5 +1,8 @@
 ﻿#include <iostream>
+#include <string>
+
 #include "ForwardList.hpp"
+#include "List.hpp"
 
 int main()
 {
@@ -20,6 +23,26 @@ int main()
 	temp.print(std::cout);
 	temp.pop_front();
 	temp.print(std::cout);
+
+  List<std::string> list;
+  std::cout << list.front() << std::endl;
+
+  list.push_back("hello");
+  list.push_back("hi");
+  list.push_back("ola");
+  list.print(std::cout);
+  list.push_front("privet");
+
+  std::cout << list.back() << std::endl;
+
+  list.print(std::cout);
+  list.pop_back();
+  list.pop_back();
+  list.print(std::cout);
+  list.pop_front();
+  list.print(std::cout);
+  list.pop_back();
+  list.print(std::cout);
 
 	return 0;
 }
