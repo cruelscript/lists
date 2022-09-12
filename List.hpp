@@ -4,8 +4,6 @@
 #include <iostream>
 #include <exception>
 
-
-
 template <typename T>
 class List
 {

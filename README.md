@@ -1,9 +1,12 @@
-# list
-Linked list data structure which stores integer numbers.
+# Linked List
+
+Here are some implementations of a template Linked list data structure.
+
+### Tasks C++
 
 List does not include repeating elements. List elements are in ascending order.
 
-This Data Structure contains: 
+Implement these operations and constructors: 
 
 - Constructor 
 - Move Constructor
@@ -23,6 +26,8 @@ Deleting elements does not cause memory leekage
 Were accounted special cases when testing e.g. (null lists, lack of required elements, etc.)
 
 # Односвязный список
+
+### Задания С++
 Создать класс, реализующий односвязный список из целых чисел.
 
 Список не должен содержать повторяющиеся элементы. 

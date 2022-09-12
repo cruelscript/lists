@@ -1,5 +1,6 @@
 #include "List.hpp"
 #include <iostream>
+
 List::List() :
   head_(nullptr), tail_(nullptr)
 {}

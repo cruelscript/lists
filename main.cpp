@@ -6,23 +6,23 @@
 
 int main()
 {
-	ForwardList<int> temp;
+  ForwardList<int> temp;
   std::cout << temp.front() << std::endl;
 
-	temp.push_back(2);
-	temp.push_back(3);
-	temp.push_back(4);
-	temp.print(std::cout);
-	temp.push_front(1);
+  temp.push_back(2);
+  temp.push_back(3);
+  temp.push_back(4);
+  temp.print(std::cout);
+  temp.push_front(1);
 
   std::cout << temp.back() << std::endl;
 
-	temp.print(std::cout);
-	temp.pop_back();
-	temp.pop_back();
-	temp.print(std::cout);
-	temp.pop_front();
-	temp.print(std::cout);
+  temp.print(std::cout);
+  temp.pop_back();
+  temp.pop_back();
+  temp.print(std::cout);
+  temp.pop_front();
+  temp.print(std::cout);
 
   List<std::string> list;
   std::cout << list.front() << std::endl;
@@ -44,5 +44,5 @@ int main()
   list.pop_back();
   list.print(std::cout);
 
-	return 0;
+  return 0;
 }
