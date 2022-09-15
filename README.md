@@ -21,31 +21,38 @@ Implement these operations and constructors:
 
 Element movement is done by pointer changing
 
-Deleting elements does not cause memory leekage
+Deleting elements does not cause memory leakage
 
 Were accounted special cases when testing e.g. (null lists, lack of required elements, etc.)
 
-# Односвязный список
+# Stack
 
-### Задания С++
-Создать класс, реализующий односвязный список из целых чисел.
+Here are some implementations of a Stack in C++ and Python. Constrained stack via array (StackArray) and stack 
+via linked list (StackList) were derived from template abstract type class. 
 
-Список не должен содержать повторяющиеся элементы. 
+Python Stack was derived from built-in deque.
 
-Элементы списка должны быть упорядочены по возрастанию.
+StackArray was implemented using PImpl pattern. 
 
-Класс должен иметь:
-- конструктор
-- конструктор перемещения
-- деструктор
-- операцию “+=” для добавления элемента в список
-- операцию “<<” для вывода элементов
-- операцию “==” для сравнения списков как метод класса
-- операцию “&” для формирования третьего списка, состоящего из элементов, присутствующих в первом и втором как дружественную функцию
-- операцию “|” для формирования третьего списка, состоящего из элементов, присутствующих в первом или во втором как дружественную функцию. Новый список не должен содержать повторяющихся элементов.
-- метод merge, добавляющий в исходный список элементы списка, заданного параметром метода. Результат: модифицированный исходный список, пустой список (параметр метода).
+C++ data structures have their own exceptions derived from base class exception.
 
-Общие требования к заданию:
-- Перемещение элементов списка в другое место списка должно выполняться только через изменение указателей.
-- Удаление элементов списка должно включать освобождение памяти.
-- При тестировании класса должны учитываться особые случаи (пустые списки, отсутствие искомых элементов и т. п.).
+[Max Stack](./stack/max_stack.cpp) - Stack with a max function.
+
+### Tasks
+
+- Implementation of a function 'testBalanceBrackets' which checks correct parentheses. It returns true if the number of open parentheses matches with the number of close parentheses, and they have correct nesting structure. 
+Also function has a parameter allowing us to choose between stack implementations.
+- Implementation of a function 'transformToPostfix' which transforms correct arythmetic expression from infix form to postfix form
+- Implementation of a function 'calculate' which (don't be shocked) calculates the postfix expression value
+- Implementation of a class 'Operator' which describes arytmetic operations as a mathematic sign of an operation and its priority. 
+
+# Queue
+
+Here are some implementations of a queue data structure. There are two version in C++. 
+From template abstract type class stack were derived constrained queue via array (QueueArray) 
+and stack via linked list (QueueList).
+
+C++ data structures have their own exceptions derived from base class exception. 
+Python queue was constructed from built-in deque. 
+
+Added methods for enqueue, dequeue and copy constructor. 
